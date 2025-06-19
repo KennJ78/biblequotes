@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    theme: ThemeData.dark(), // Dark theme to match the screenshot
+    theme: ThemeData.dark(),
     home: Scaffold(
       appBar: AppBar(
         title: const Text('Bible Quotes'),
@@ -13,43 +13,91 @@ void main() {
           child: Divider(color: Colors.black, thickness: 2),
         ),
       ),
-      body: SafeArea(
-        child: Center(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: const [
-                Text(
-                  'Wait for the LORD; be strong\nand take heart and wait for the LORD.',
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Container(
+            margin: const EdgeInsets.all(20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                const Text(
+                  'Name: ',
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
-                  textAlign: TextAlign.center,
                 ),
-                SizedBox(height: 16),
-                Text(
-                  'Psalm 27:14',
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.cyanAccent,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                Text(
-                  'God Bless 😇🥰',
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.yellowAccent,
-                    fontWeight: FontWeight.w600,
+                Container(
+                  padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+                  child: const Text(
+                    'Kenn Jonathan D. Bayungan',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.cyanAccent,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
                 ),
               ],
             ),
           ),
-        ),
+          Container(
+            margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                const Text(
+                  'Age: ',
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                Container(
+                  padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+                  child: const Text(
+                    '20 years old',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.cyanAccent,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            margin: const EdgeInsets.fromLTRB(15, 20, 20, 10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                const Text(
+                  'Gender: ',
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                Container(
+                  padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+                  child: const Text(
+                    'Male',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.cyanAccent,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     ),
   ));
