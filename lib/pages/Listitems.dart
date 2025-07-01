@@ -31,6 +31,7 @@ class _ListitemsState extends State<Listitems> {
           ),
         ),
       ),
+
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 12.0),
         child: Column(
@@ -54,6 +55,17 @@ class _ListitemsState extends State<Listitems> {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.red,
+        onPressed: () {
+          Navigator.pushNamed(context, '/add');
+        },
+        child: Icon(
+          Icons.add,
+          color: Colors.white,
+        ),
+      ),
+
     );
   }
 }
