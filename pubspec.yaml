@@ -19,9 +19,4 @@ dev_dependencies:
 flutter:
     uses-material-design: true
 
-    assets:
-      - assets/images/bg1.jpeg
-      - assets/images/bg2.avif
-      - assets/images/bg3.jpg
-      - assets/images/bg4.jpg
-      - assets/images/bg5.jpg
+
