@@ -13,6 +13,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   http: ^1.4.0
   intl: ^0.20.2
+  flutter_spinkit: ^5.2.0
 
 dev_dependencies:
   flutter_test:
@@ -20,5 +21,8 @@ dev_dependencies:
 
 flutter:
     uses-material-design: true
+
+    assets:
+      - assets/
 
 

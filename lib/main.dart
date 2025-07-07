@@ -8,12 +8,12 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: '/loading',
+    initialRoute: '/',
     routes: {
-      '/': (context) => Dashboard(),
+      '/a': (context) => Dashboard(),
       '/add' : (context) => Addmusic(),
       '/listitems': (context) => Listitems(),
-      '/loading' : (context) => Loading(),
+      '/' : (context) => Loading(),
       '/home' : (context) => Home(),
       '/location' : (context) => ChooseLocation()
 
